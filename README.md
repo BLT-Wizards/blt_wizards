@@ -1,20 +1,20 @@
 # BLT-Wizards
 
-## <ins>Pitch</ins>
+## Pitch
 
 
-## <ins>Milestones</ins>
+## Milestones
 
 
-## <ins>Scope List</ins>
+## Scope List
 
-### Must - 
-### Should - 
-### Could - 
-
-
-## <ins>Risks</ins>
+#### Must - 
+#### Should - 
+#### Could - 
 
 
-## <ins>Team Agreements</ins>
+## Risks
+
+
+## Team Agreements
 
