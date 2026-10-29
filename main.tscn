@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://6q2rv6nbwel4"]
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_uhlfy"]
+orientation = 2
+
 [node name="Node2D" type="Node2D" unique_id=935881359]
 
-[node name="Label" type="Label" parent="." unique_id=484680026]
-offset_right = 1153.0
-offset_bottom = 649.0
-text = "Hello there"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1031287235]
+mesh = SubResource("PlaneMesh_uhlfy")
