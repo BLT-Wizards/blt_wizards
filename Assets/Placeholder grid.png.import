@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce0t23hrawpmj"
-path="res://.godot/imported/pure-aqua-fyva.jpg-25df9d52b80c682fac5d6d8a50fac7b6.ctex"
+uid="uid://bvk6db50k0ocv"
+path="res://.godot/imported/Placeholder grid.png-a0b3d7e733126dc61c61f125aea650e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/pure-aqua-fyva.jpg"
-dest_files=["res://.godot/imported/pure-aqua-fyva.jpg-25df9d52b80c682fac5d6d8a50fac7b6.ctex"]
+source_file="res://Assets/Placeholder grid.png"
+dest_files=["res://.godot/imported/Placeholder grid.png-a0b3d7e733126dc61c61f125aea650e8.ctex"]
 
 [params]
 
