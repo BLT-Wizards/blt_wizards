@@ -13,8 +13,12 @@ func _process(delta: float):
 	pass
 	
 
+
+
+
 func _on_card_mouse_entered():
 	mouse_entered.emit()
 
-func _on_card_mouse_exited() -> void:
+
+func _on_card_mouse_exited():
 	mouse_exited.emit()

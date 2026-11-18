@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dh8wpoantmqjy"]
+
+[ext_resource type="Script" uid="uid://c4hc62v5ialyu" path="res://attack_card.gd" id="1_s2bxn"]
+[ext_resource type="PackedScene" uid="uid://26yvivrqhkee" path="res://Scenes/card.tscn" id="2_rsy0m"]
+
+[node name="AttackCard" type="Node2D" unique_id=1813868434]
+script = ExtResource("1_s2bxn")
+
+[node name="Card" parent="." unique_id=1184489503 instance=ExtResource("2_rsy0m")]

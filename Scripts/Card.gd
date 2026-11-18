@@ -46,8 +46,12 @@ func _process(delta):
 	_update_graphics()
 
 
+
+
+
 func _on_area_2d_mouse_entered():
 	mouse_entered.emit()
+
 
 func _on_area_2d_mouse_exited():
 	mouse_exited.emit()
