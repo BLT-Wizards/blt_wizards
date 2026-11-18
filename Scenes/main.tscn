@@ -62,17 +62,22 @@ zoom = Vector2(0.75, 0.75)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1165074177]
 
 [node name="Hand" parent="CanvasLayer" unique_id=2078097161 instance=ExtResource("5_kry3j")]
-position = Vector2(552, 1800)
+position = Vector2(600, 1900)
 hand_radius = 1000
-card_angle = -90.0
 
 [node name="Button" type="Button" parent="." unique_id=723668638]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 1188.0
+offset_top = 69.0
+offset_right = 1374.0
+offset_bottom = 105.0
+text = "Defend Card"
 
 [node name="Button2" type="Button" parent="." unique_id=192148728]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 1189.0
+offset_top = 21.0
+offset_right = 1374.0
+offset_bottom = 58.0
+text = "Attack Card"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -12,6 +12,7 @@ hand_radius = 500
 card_angle = -90.0
 
 [node name="TestCard" parent="." unique_id=1813868434 instance=ExtResource("2_u7o8q")]
+visible = false
 position = Vector2(0, -500)
 
 [node name="DebugShape" type="CollisionShape2D" parent="." unique_id=1507181314]

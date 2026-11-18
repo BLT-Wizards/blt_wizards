@@ -10,7 +10,7 @@ signal mouse_exited
 @export var card_image: Sprite2D
 
 @onready var cost_lbl: Label = $CostDisplay/CostLbl
-@onready var name_lbl: Label = $CardName/NameLbl
+@onready var name_lbl: Label = $CardName/NamLbl
 @onready var description_lbl: Label = $CardDescription
 @onready var base_sprite: Sprite2D = $BaseCardSprite
 
