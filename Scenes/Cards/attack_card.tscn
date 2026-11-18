@@ -9,3 +9,4 @@ script = ExtResource("1_s2bxn")
 [node name="Card" parent="." unique_id=1184489503 instance=ExtResource("2_rsy0m")]
 card_name = "Attack Card"
 card_description = "Attack Damage 1"
+card_cost = 3
