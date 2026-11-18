@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cujxdowat186j"]
+
+[ext_resource type="Script" uid="uid://dkc3pstxtrpco" path="res://Scripts/AttackCard.gd" id="1_gn41f"]
+[ext_resource type="PackedScene" uid="uid://cetb3bhwjirk5" path="res://Scenes/card.tscn" id="1_nkpat"]
+[ext_resource type="Texture2D" uid="uid://d168nyw44vysl" path="res://Assets/skull.png" id="2_gn41f"]
+
+[node name="AttackCard" type="Node2D" unique_id=1639425937]
+script = ExtResource("1_gn41f")
+
+[node name="Card" parent="." unique_id=912942240 node_paths=PackedStringArray("card_image") instance=ExtResource("1_nkpat")]
+card_name = "Attack"
+card_description = "Damage 1"
+card_image = NodePath("../CardImage")
+
+[node name="CardImage" type="Sprite2D" parent="." unique_id=356943684]
+position = Vector2(0, -75.99999)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_gn41f")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Card" to="." method="_on_card_mouse_entered"]
+[connection signal="mouse_exited" from="Card" to="." method="_on_card_mouse_exited"]

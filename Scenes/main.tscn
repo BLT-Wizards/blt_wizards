@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://b2aub0n6de6oi"]
+
+[ext_resource type="Script" uid="uid://dv6jkqkxjxn77" path="res://Scripts/deck_n_hand.gd" id="1_jjgbg"]
+[ext_resource type="PackedScene" uid="uid://dkgse1l6bf60n" path="res://Scenes/Hand.tscn" id="2_bo1nx"]
+
+[node name="deck_n_hand" type="Node2D" unique_id=1355223437]
+position = Vector2(555, 318)
+script = ExtResource("1_jjgbg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1030870698]
+
+[node name="Hand" parent="CanvasLayer" unique_id=944642019 instance=ExtResource("2_bo1nx")]
+position = Vector2(640, 1500)
+hand_radius = 1000
+max_card_spread = 7.75
+
+[node name="Button" type="Button" parent="." unique_id=1268477707]
+offset_left = -517.0
+offset_top = -291.0
+offset_right = -404.0
+offset_bottom = -260.0
+text = "Create Card 1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="." unique_id=1123193963]
+offset_left = -517.0
+offset_top = -245.0
+offset_right = -404.0
+offset_bottom = -214.0
+text = "Create Card 2"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://cetb3bhwjirk5"]
+
+[ext_resource type="Script" uid="uid://cypdjr7rrtlbc" path="res://Scripts/Card.gd" id="1_eumee"]
+[ext_resource type="Texture2D" uid="uid://dnl7vbjfgl4cf" path="res://Assets/Place holder Card.png" id="1_q5obu"]
+[ext_resource type="Texture2D" uid="uid://cdkro73v2rtcu" path="res://Assets/mana place holder.png" id="2_e484p"]
+[ext_resource type="FontFile" uid="uid://c8qtj54crbhvw" path="res://Assets/MemoryPro.ttf" id="3_fpac0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kaqet"]
+font = ExtResource("3_fpac0")
+font_size = 52
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_w1hva"]
+font = ExtResource("3_fpac0")
+font_size = 52
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_547so"]
+font = ExtResource("3_fpac0")
+font_size = 52
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uhlfy"]
+size = Vector2(327.59286, 521.0326)
+
+[node name="Card" type="Node2D" unique_id=912942240]
+scale = Vector2(0.49756888, 0.49900913)
+script = ExtResource("1_eumee")
+
+[node name="BaseCardSprite" type="Sprite2D" parent="." unique_id=953879396]
+texture = ExtResource("1_q5obu")
+
+[node name="CostDisplay" type="Node2D" parent="." unique_id=785700794]
+
+[node name="Sprite2D" type="Sprite2D" parent="CostDisplay" unique_id=645156059]
+position = Vector2(1, -240)
+texture = ExtResource("2_e484p")
+
+[node name="CostLbl" type="Label" parent="CostDisplay" unique_id=2023660261]
+offset_left = -18.0
+offset_top = -262.0
+offset_right = 22.0
+offset_bottom = -220.0
+text = "1"
+label_settings = SubResource("LabelSettings_kaqet")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CardName" type="Node2D" parent="." unique_id=881867877]
+position = Vector2(0, -239)
+
+[node name="NameLbl" type="Label" parent="CardName" unique_id=2099838645]
+offset_left = -138.67427
+offset_top = 10.547269
+offset_right = 140.68407
+offset_bottom = 168.861
+text = "Card Name"
+label_settings = SubResource("LabelSettings_w1hva")
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CardImage" type="Node2D" parent="." unique_id=1782468056]
+position = Vector2(-3, -158)
+
+[node name="BaseCardImage" type="Sprite2D" parent="CardImage" unique_id=1655561479]
+
+[node name="CardDescription" type="Label" parent="." unique_id=926222980]
+offset_left = -140.68404
+offset_top = -50.099285
+offset_right = 140.68407
+offset_bottom = 230.45668
+text = "Card Description"
+label_settings = SubResource("LabelSettings_547so")
+horizontal_alignment = 1
+autowrap_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=22928943]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1354223944]
+position = Vector2(-1.0049015, -6.011922)
+shape = SubResource("RectangleShape2D_uhlfy")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
