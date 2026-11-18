@@ -8,8 +8,8 @@ https://docs.google.com/presentation/d/1dmdJUZWRLArhiQ0Y_xv-EujU8-x2FmPTcibSwg1-
 
 ## Scope List
 
-#### Must - Player Grid Builder
-#### Should - 
+#### Must - Player Grid Builder, Card System
+#### Should - Progression Map
 #### Could - Enemy AI
 
 
@@ -17,5 +17,5 @@ https://docs.google.com/presentation/d/1dmdJUZWRLArhiQ0Y_xv-EujU8-x2FmPTcibSwg1-
 Player Grid interaction and builder
 
 
-## Team Agreements
-
+## Trellp
+https://trello.com/b/qC2247EQ
